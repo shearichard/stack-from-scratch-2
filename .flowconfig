@@ -1,2 +1,7 @@
 [options]
 suppress_comment= \\(.\\|\n\\)*\\flow-disable-next-line
+[ignore]
+#This is outside the suggested scope but, apparently, to get around a flow bug
+#at some point this directive (and the 'ignore' container) could be removed
+#https://github.com/verekia/js-stack-from-scratch/issues/237#issuecomment-314257802
+.*/node_modules/eslint-plugin-jsx-a11y/*
